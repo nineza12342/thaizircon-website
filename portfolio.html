@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ผลงานของเรา | บริษัทไทยเซอร์คอน จำกัด</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Sarabun', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #4d4545;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #000;
+      border-radius: 5px;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      color: #4d4545;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project .info {
+      padding: 15px;
+    }
+
+    .project .info h3 {
+      margin: 0 0 10px;
+      color: #4d4545;
+    }
+
+    .project .info p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #4d4545;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <img src="Image/LOGO.png" alt="โลโก้บริษัท" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="catalog.html">สินค้า</a></li>
+          <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="service.html">บริการของเรา</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>ผลงานของเรา</h1>
+
+        <div class="grid">
+          <div class="project">
+            <img src="Image/roof.png" alt="Solar Rooftop Global House">
+            <div class="info">
+              <h3>Solar Rooftop - Global House จ.แพร่</h3>
+              <p>ติดตั้งระบบผลิตไฟฟ้าพลังงานแสงอาทิตย์ขนาด 600kWp ระหว่างวันที่ 5-15 ธ.ค. 2564</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="Image/robot.png" alt="Painting Robot NHK">
+            <div class="info">
+              <h3>ระบบพ่นสีอัตโนมัติ - NHK</h3>
+              <p>ติดตั้งห้องพ่นสีพร้อมแขนกลอัตโนมัติ เพิ่มประสิทธิภาพการผลิตและลดของเสีย</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="Image/TTN.png" alt="Drying Oven TTN">
+            <div class="info">
+              <h3>ปรับปรุงเตาอบแห้ง - TTN</h3>
+              <p>ออกแบบและติดตั้งเตาอบแห้งสำหรับไลน์ผลิตใหม่ เพิ่มอัตราความร้อนและลดเวลาอบ</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="Image/TYK.png" alt="Water System TYK">
+            <div class="info">
+              <h3>ระบบบำบัดน้ำ - TYK</h3>
+              <p>สร้างเครื่องแยกกากและระบบบำบัดน้ำเสียที่มีประสิทธิภาพสูงในพื้นที่จำกัด</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="Image/bangplee.png" alt="อาคารพักอาศัย บางพลี">
+            <div class="info">
+              <h3>อาคารพักอาศัยรวม - บางพลี</h3>
+              <p>ก่อสร้างอาคารพักอาศัยหลายชั้นใกล้วัดหลวงพ่อโต จ.สมุทรปราการ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      © 2025 บริษัท ไทยเซอร์คอน จำกัด | โทร: 064-137-4194 | Email: pichaya.en@gmail.com
+    </footer>
+
+  </div>
+</body>
+</html>

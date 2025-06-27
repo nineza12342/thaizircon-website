@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>บริษัทไทยเซอร์คอน จำกัด</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Sarabun', sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #4d4545;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      max-height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .parallax {
+      background-image: url('Image/index.jpg');
+      height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 0 0 6px black;
+      padding: 40px 20px;
+    }
+
+    .parallax h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .parallax p {
+      font-size: 1.3rem;
+      margin: 15px 0;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+    }
+
+    .section h2 {
+      color: #4d4545;
+      border-left: 6px solid #ffcc00;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .highlight {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #4d4545;
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e6b800;
+    }
+
+    .section ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    footer {
+      background-color: #4d4545;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .parallax h1 {
+        font-size: 2rem;
+      }
+
+      .parallax p {
+        font-size: 1rem;
+      }
+
+      .section {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="Image/LOGO.png" alt="โลโก้บริษัท" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="catalog.html">สินค้า</a></li>
+          <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="service.html">บริการของเรา</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="parallax">
+      <h1>ยินดีต้อนรับสู่ บริษัทไทยเซอร์คอน จำกัด</h1>
+      <p>ผู้เชี่ยวชาญด้านพลังงานแสงอาทิตย์ ระบบไฟฟ้า และงานอุตสาหกรรม</p>
+      <a href="about.html" class="button">ดูข้อมูลบริษัท</a>
+    </section>
+
+    <section class="section">
+      <h2>เกี่ยวกับเรา</h2>
+      <p>
+        บริษัท ไทยเซอร์คอน จำกัด เป็นผู้ให้บริการ ออกแบบ ผลิต ติดตั้ง รับเหมาก่อสร้าง และเป็นตัวแทนจำหน่าย นำเข้าชิ้นส่วนอุปกรณ์ในงานอุตสาหกรรม
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>กลุ่มบริการหลัก</h2>
+      <div class="highlight">🔧 งานระบบอัตโนมัติและเครื่องจักรในโรงงาน</div>
+      <div class="highlight">🏗️ รับเหมาก่อสร้าง อาคาร โกดัง โรงงาน</div>
+      <div class="highlight">🌞 ระบบโซลาร์เซลล์ (Solar Roof / Solar Farm / Floating)</div>
+      <div class="highlight">🌱 ระบบสิ่งแวดล้อม เช่น เครื่องแยกกากและเครื่องกรองอากาศ</div>
+    </section>
+
+    <section class="section">
+      <h2>ผลงานเด่น</h2>
+      <ul>
+        <li>✅ ติดตั้ง Solar Rooftop 600kWp ที่ Global House จ.แพร่</li>
+        <li>✅ ระบบพ่นสีอัตโนมัติพร้อมแขนกล ที่ NHK</li>
+        <li>✅ ปรับปรุงเตาอบแห้งอุตสาหกรรมที่ TTN และ KYB</li>
+        <li>✅ ก่อสร้างอาคารพักอาศัยและระบบประปาผิวดินในหลายจังหวัด</li>
+      </ul>
+      <a href="portfolio.html" class="button">ดูผลงานเพิ่มเติม</a>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 บริษัท ไทยเซอร์คอน จำกัด | โทร: 064-137-4194 | Email: pichaya.en@gmail.com
+  </footer>
+</body>
+</html>

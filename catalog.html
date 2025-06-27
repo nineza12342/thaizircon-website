@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>แคตตาล็อกสินค้า | บริษัทไทยเซอร์คอน จำกัด</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Sarabun', sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background: url('Image/catalog.jpg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: brightness(0.95);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(24, 20, 20, 0.603);
+      color: white;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #000;
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      margin-top: 20px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    select, input[type="text"] {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #f1f1f1;
+    }
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .item {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(168, 7, 7, 0.1);
+      text-align: center;
+    }
+
+    .item img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .item h3 {
+      margin: 10px 0 5px;
+      color: #000;
+    }
+
+    .item p {
+      color: #000;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <header>
+      <img src="Image/LOGO.png" alt="โลโก้บริษัท" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="catalog.html">สินค้า</a></li>
+          <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="service.html">บริการของเรา</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>แคตตาล็อกสินค้า</h1>
+    <div class="controls">
+      <select id="categoryFilter">
+        <option value="all">ทุกหมวดหมู่</option>
+        <option value="chemicals">สารเคมี</option>
+        <option value="equipment">อุปกรณ์นิรภัย</option>
+        <option value="tools">เครื่องมือ</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="ค้นหาสินค้า..." />
+    </div>
+
+    <div class="catalog" id="catalog">
+      <div class="item" data-category="chemicals">
+        <img src="https://via.placeholder.com/250x150?text=น้ำยาทำความสะอาด" />
+        <h3>น้ำยาทำความสะอาด X-100</h3>
+        <p>สารทำความสะอาดอเนกประสงค์</p>
+      </div>
+      <div class="item" data-category="equipment">
+        <img src="https://via.placeholder.com/250x150?text=หมวกนิรภัย" />
+        <h3>หมวกนิรภัย รุ่น A1</h3>
+        <p>รองรับมาตรฐานอุตสาหกรรม</p>
+      </div>
+      <div class="item" data-category="tools">
+        <img src="https://via.placeholder.com/250x150?text=ไขควงไฟฟ้า" />
+        <h3>ไขควงไฟฟ้า T900</h3>
+        <p>เหมาะสำหรับงานช่างไฟ</p>
+      </div>
+      <div class="item" data-category="equipment">
+        <img src="https://via.placeholder.com/250x150?text=แว่นตานิรภัย" />
+        <h3>แว่นตานิรภัย UV-Pro</h3>
+        <p>ป้องกันแสง UV และฝุ่น</p>
+      </div>
+      <div class="item" data-category="chemicals">
+        <img src="https://via.placeholder.com/250x150?text=น้ำยาฆ่าเชื้อ" />
+        <h3>น้ำยาฆ่าเชื้อ GermX</h3>
+        <p>ฆ่าเชื้อได้ถึง 99.9%</p>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+     © 2025 บริษัท ไทยเซอร์คอน จำกัด | โทร: 064-137-4194 | Email: pichaya.en@gmail.com
+  </footer>
+
+  <script>
+    const categoryFilter = document.getElementById('categoryFilter');
+    const searchInput = document.getElementById('searchInput');
+    const items = document.querySelectorAll('.item');
+
+    function filterCatalog() {
+      const category = categoryFilter.value;
+      const keyword = searchInput.value.toLowerCase();
+
+      items.forEach(item => {
+        const matchesCategory = (category === 'all' || item.dataset.category === category);
+        const matchesSearch = item.innerText.toLowerCase().includes(keyword);
+        item.style.display = matchesCategory && matchesSearch ? 'block' : 'none';
+      });
+    }
+
+    categoryFilter.addEventListener('change', filterCatalog);
+    searchInput.addEventListener('input', filterCatalog);
+  </script>
+</body>
+</html>

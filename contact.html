@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ติดต่อเรา | บริษัทไทยเซอร์คอน จำกัด</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Sarabun', sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-color: #f7f7f7;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #4d4545;
+      color: white;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #000;
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #4d4545;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      color: #4d4545;
+      margin-bottom: 20px;
+    }
+
+    .contact-container p {
+      display: flex;
+      align-items: flex-start;
+      margin: 10px 0;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 30px;
+      font-size: 1.2em;
+      margin-right: 10px;
+      color: #4d4545;
+    }
+
+    footer {
+      background-color: #4d4545;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <header>
+      <img src="Image/LOGO.png" alt="โลโก้บริษัท" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="catalog.html">สินค้า</a></li>
+          <li><a href="about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="service.html">บริการของเรา</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>ติดต่อเรา</h1>
+
+    <div class="contact-container">
+      <h2>บริษัทไทยเซอร์คอน จำกัด</h2>
+      <p><span class="icon">📍</span>ที่อยู่: 747/367 หมู่.7 ต.บางพลีใหญ่ อ.บางพลี จ.สมุทรปราการ 10540</p>
+      <p><span class="icon">📞</span>โทรศัพท์: 064-137-4194 (พจ), 086-992-8365 (แก้ว)</p>
+      <p><span class="icon">📧</span>อีเมล: pichaya.en@gmail.com</p>
+      <p><span class="icon">⏰</span>เวลาทำการ: จันทร์ - ศุกร์ เวลา 08:00 - 17:00 น.</p>
+    </div>
+  </div>
+
+  <footer>
+     © 2025 บริษัท ไทยเซอร์คอน จำกัด | โทร: 064-137-4194 | Email: pichaya.en@gmail.com
+  </footer>
+</body>
+</html>
